@@ -9,8 +9,8 @@ pipeline {
     stages {
         stage('first') {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: 'refs/heads/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/SrinivasanSE/Todo-app']]])
-                 }
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/SrinivasanSE/Todo-app.git']]])
+                  }
         }
         stage('second') {
             steps {
