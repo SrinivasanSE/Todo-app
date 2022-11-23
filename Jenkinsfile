@@ -29,6 +29,11 @@ pipeline {
                 myFunc("seenu")
             }
         }
+         stage('executing') {
+            steps {
+                sh "python test.py"
+            }
+        }
     }
 }
 def myFunc(String flag) {
