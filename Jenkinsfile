@@ -9,8 +9,8 @@ pipeline {
     stages {
         stage('first') {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/SrinivasanSE/Todo-app.git']]])
-                  }
+                 echo "waste"
+                       }
         }
         stage('second') {
             steps {
