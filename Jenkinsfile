@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('first') {
             steps {
-                echo "${hello}"
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/SrinivasanSE/Todo-app']]])
             }
         }
         stage('second') {
