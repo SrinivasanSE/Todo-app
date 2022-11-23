@@ -31,7 +31,7 @@ pipeline {
         }
          stage('executing') {
             steps {
-                sh "python test.py"
+                bat "python test.py"
             }
         }
     }
